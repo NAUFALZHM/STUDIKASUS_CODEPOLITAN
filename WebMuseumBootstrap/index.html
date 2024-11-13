@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg" id="navbar">
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">MUSEUM</a>
         <button
@@ -44,7 +44,7 @@
     </nav>
 
     <section class="container-fluid px-0">
-      <div class="row align-items-center content">
+      <div class="row align-items-center content" id="home">
         <div class="col-lg-6">
           <div class="text-white text-center d-none d-lg-block" id="title-head">
             <h1>MUSEUM OF DINO</h1>
@@ -56,11 +56,11 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid" src="images/museum.jpg" alt="" />
+          <img class="img-fluid" src="images/museum.jpg" />
         </div>
       </div>
 
-      <div class="row align-items-center content">
+      <div class="row align-items-center content" id="about">
         <div class="col-md-6 order-2 order-md-1">
           <img src="images/dino1.jpg" alt="" class="img-fluid" />
         </div>
@@ -69,7 +69,32 @@
             <div class="col-10 col-lg-8 blurb pt-3">
               <h2>Museum of Ark</h2>
               <img
-                src="images/dino-head.jpg"
+                src="images/dino-head.png"
+                height="60"
+                alt=""
+                class="d-none d-lg-inline"
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                nostrum harum aliquid enim iusto voluptas consequatur deleniti
+                aut saepe repellendus inventore earum vel ex ducimus vero quos
+                eos fugiat voluptate!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center content" id="ticket">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="images/dino2.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb pt-3">
+              <h2>Museum of Ark</h2>
+              <img
+                src="images/dino-head.png"
                 height="60"
                 alt=""
                 class="d-none d-lg-inline"
@@ -96,5 +121,13 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          let $nav = $("#navbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>

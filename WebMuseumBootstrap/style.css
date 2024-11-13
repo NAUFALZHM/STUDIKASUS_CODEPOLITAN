@@ -9,7 +9,7 @@ body {
 }
 
 #navbar .nav-link {
-  color: white;
+  color: #999;
 }
 
 #navbar .nav-link:hover {
@@ -19,6 +19,11 @@ body {
 #navbar .navbar-brand {
   color: #354259;
   font-size: 1.5rem;
+}
+
+.navbar.scrolled{
+  background-color: #c2ded1;
+  /* transition: background 500ms; */
 }
 
 #title-head {
@@ -39,10 +44,10 @@ body {
     line-height: 2;
 }
 
-.content {
+/* .content {
     margin-top:100px;
     margin-bottom:100px;
-}
+} */
 
 @media (max-width: 1200px) {
     #title-head h1 {
