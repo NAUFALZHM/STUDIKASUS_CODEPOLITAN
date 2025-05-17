@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Belajar React Js Lengkap",
+        "tags" : ["react", "javascript"],
+        "date": "2025-01-10"
+    },
+    {
+        "title": "Belajar Next Js Lengkap",
+        "tags" : ["next", "javascript"],
+        "date": "2025-01-11"
+    },
+    {
+        "title": "Belajar Tailwind CSS Lengkap",
+        "tags" : ["tailwind", "css"],
+        "date": "2025-01-12"
+    },
+    {
+        "title": "Belajar React Native Lengkap",
+        "tags" : ["react", "javascript"],
+        "date": "2025-01-13"
+    }
+]
